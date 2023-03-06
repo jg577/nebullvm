@@ -7,8 +7,8 @@ from beartype import beartype
 from beartype.typing import Optional, Tuple
 from einops import rearrange
 from torch.utils.data import Dataset, DataLoader
-from config import ConfigActor
-from utils import TrainingStats
+from .config import ConfigActor
+from .utils import TrainingStats
 
 from chatllama.llama_model import load_model
 

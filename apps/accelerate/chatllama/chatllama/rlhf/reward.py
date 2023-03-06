@@ -12,8 +12,8 @@ from transformers import GPT2Tokenizer, GPT2Model, BartModel
 from transformers import BartTokenizer, BartConfig, AutoModel, AutoTokenizer
 
 from chatllama.langchain_modules.prompt_templates import REWARD_TEMPLATE
-from config import ConfigReward
-from utils import TrainingStats
+from .config import ConfigReward
+from .utils import TrainingStats
 
 
 class RewardModel(torch.nn.Module):

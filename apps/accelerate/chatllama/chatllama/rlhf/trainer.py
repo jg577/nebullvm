@@ -9,10 +9,10 @@ from beartype.typing import Deque, Tuple, List
 from einops import rearrange
 from torch.utils.data import Dataset, DataLoader
 
-from actor import ActorModel
-from reward import RewardModel, CriticModel
-from config import ConfigReward, ConfigActor, Config
-from utils import TrainingStats, ConversationLog
+from .actor import ActorModel
+from .reward import RewardModel, CriticModel
+from .config import ConfigReward, ConfigActor, Config
+from .utils import TrainingStats, ConversationLog
 
 
 class ActorCritic(torch.nn.Module):
